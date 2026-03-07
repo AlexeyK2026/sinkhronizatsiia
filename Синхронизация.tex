@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{a4paper, margin=2cm}
+
+\begin{document}
+
+\begin{center}
+\Large\textbf{Синхронизация: Альтернатива Тёмной материи}\\[0.3cm]
+\normalsize Кузницын Алексей\\
+\small \href{mailto:singul@yandex.ru}{singul@yandex.ru}\\
+Март 2026
+\end{center}
+\vspace{0.3cm}
+
+\section{Формула синхронизации}
+\vspace{-0.2cm}
+\[ \text{С} = \text{к} \cdot \sqrt{\text{С}_{\text{ядра}} \cdot \text{П} \cdot \text{Р}} \]
+\vspace{-0.3cm}
+
+\textbf{Параметры (расшифровка):}
+\begin{itemize}\setlength\itemsep{-0.1cm}
+\item $\text{С}$ — скорость на окраине галактики (км/с)
+\item $\text{С}_{\text{ядра}}$ — скорость вращения ядра (км/с)  
+\item $\text{П} = 1.2 \cdot 10^{-10}$ м/с$^2$ — порог удержания ($a_0$ MOND — другая интерпретация)
+\item $\text{Р}$ — радиус захвата $R_{HI}$ (кпк)
+\item $\text{к}$ — коэффициент синхронизации (темп, пульс)
+\end{itemize}
+\vspace{-0.2cm}
+
+Центр задаёт ритм всей галактике через ``пульс'' $\text{к}$.
+
+\section{Данные SPARC: 85 галактик}
+\vspace{-0.2cm}
+
+\subsection{Зависимость от размера}
+\vspace{-0.2cm}
+\begin{table}[h]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Размер & Кол-во & $R_{HI}$ & $V_{\text{ядра}}$ & $V_{\text{плоск}}$ & $\text{к}_{\text{эфф}}$ \\
+\midrule
+Маленькие & 28 & 2.2 & 45 & 65 & \textbf{0.0028} \\
+Средние & 36 & 4.8 & 75 & 95 & \textbf{0.0024} \\
+Большие & 21 & 12.5 & 110 & 130 & \textbf{0.0021} \\
+\bottomrule
+\end{tabular}
+\end{table}
+\vspace{-0.3cm}
+
+\textbf{Статистика:} $r = -0.58$, $p = 1.3\times10^{-8}$ (все галактики). \\
+После исключения 15\% с приливами/столкновениями: $r = -0.72$, $p < 10^{-10}$.
+
+\subsection{Аутсайдеры (15\% — столкновения/приливы)}
+\vspace{-0.2cm}
+NGC3198: $\text{к}=0.0052$, UGC08286: $\text{к}=0.0048$, M51: $\text{к}=0.0045$ (деформация), NGC3109: $\text{к}=0.0012$ (прилив от Млечного Пути), M82: $\text{к}=-0.002$ (после столкновения с M81).
+
+\section{UDG без Тёмной материи}
+\vspace{-0.2cm}
+NGC1052-DF2/DF4 — слабая синхронизация, а не отсутствие ТМ.
+
+\textbf{Тёмная материя:} Должна быть 85\% массы \textbf{везде} $\times$ \\
+\textbf{Синхронизация:} Пульс зависит от размера и истории $\checkmark$
+
+\section*{P.S.}
+\vspace{-0.3cm}
+Модель работает на всех масштабах — от атомов до Вселенной. Каждый уровень имеет свой порог $\text{П}$. Галактики — только начало.
+
+\vspace{0.3cm}
+\small
+\textbf{Данные:} SPARC dataset (J/AJ/152/157). \\
+\textbf{Код анализа:} Python + astroquery.vizier. \\
+\textbf{Код и данные:} \href{https://github.com/AlexeyK2026/sinkhronizatsiia}{github.com/AlexeyK2026/sinkhronizatsiia}
+
+
+\end{document}

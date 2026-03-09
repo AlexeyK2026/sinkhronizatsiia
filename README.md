@@ -16,5 +16,7 @@
 - Синхронизация.tex — LaTeX-исходник препринта
 - sparc_k_eff_check.csv — 85 галактик
 - analyze_sparc.py — код работает с Vizier SPARC
+- График.png - визуализация
 
 singul@yandex.ru
+
